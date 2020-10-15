@@ -3,7 +3,7 @@ everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt
 
 large = Array.new(100000, 'nemo')
 
-def findNemo(array)
+def find_nemo(array)
     t0 = (Time.now.to_f * 1000)
     array.each do |i|
         if i === "nemo"
@@ -15,4 +15,4 @@ def findNemo(array)
     puts "Call to find Nemo took #{(t1-t0)*1000.0} milliseconds"
 end
 
-findNemo(large)
+find_nemo(large)

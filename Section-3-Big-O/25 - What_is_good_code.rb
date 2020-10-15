@@ -1,6 +1,6 @@
 nemo = ['nemo']
 
-def findNemo(array)
+def find_nemo(array)
     array.each do |i|
         if i === "nemo"
             puts "Found NEMO!"
@@ -8,4 +8,4 @@ def findNemo(array)
     end
 end
 
-findNemo(nemo)
+find_nemo(nemo)
