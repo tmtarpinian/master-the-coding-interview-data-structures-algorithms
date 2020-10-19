@@ -21,9 +21,12 @@ class My_array
         @@all << self
     end
 
+    def self.all
+        @@all
+    end
+
     def get(index)
         self.data[index]
-        
     end
 
     def push(item)
@@ -42,6 +45,7 @@ class My_array
     def delete(index)
         deleted_item = @data[index]
         self.shift_items(index)
+        deleted_item
     end
 
     def shift_items(index)
