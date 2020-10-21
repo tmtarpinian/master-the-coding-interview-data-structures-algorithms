@@ -3,6 +3,7 @@ str = "Hi My name is Andrei"
 def reverse(str)
     if !str || str.length < 2 || str != str.to_s
         puts "hmm that is not good"
+        return "hmm that is not good"
     end
 
     backwards = []
@@ -11,7 +12,7 @@ def reverse(str)
         backwards.push(str[total_items])
         total_items -= 1
     end
-    
+
     backwards.join('')
 end
 
