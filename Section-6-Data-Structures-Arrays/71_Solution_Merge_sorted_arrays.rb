@@ -16,17 +16,18 @@ def merge_sorted_arrays(array1, array2)
         array1
     end
 
-    while array_1_item || array_2_item
-        if array_2_item === nil || array_1_item < array_2_item
+    while array_1_item != nil || array_2_item != nil
+        if !array_2_item || array_1_item < array_2_item
             merged_array.push(array_1_item)
-            array_1_item = array1[1]
-            i++
+            array_1_item = array1[i]
+            i+=1
         else
             merged_array.push(array_2_item)
-            array_2_item = array2[1]
-            j++
+            array_2_item = array2[j]
+            j+=1
         end
     end
-
     merged_array
 end
+
+merge_sorted_arrays(array1, array2)
